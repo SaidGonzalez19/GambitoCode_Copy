@@ -55,4 +55,17 @@ void mostrar_tablero(char tablero[FILAS][COLUMNAS]){
         printf("\n  +---+---+---+---+---+---+---+---+---+---+\n");
     }
 }
+void colocar_pieza(char tablero[FILAS][COLUMNAS], int fila, int columna, char pieza) {
+    if (fila >= 0 && fila < FILAS && columna >= 0 && columna < COLUMNAS) {
+        printf("DEBUG: Colocando pieza '%c' en [%d,%d]\n", pieza, fila, columna);
+        tablero[fila][columna] = pieza;
+    }
+}
+
+char obtener_pieza(char tablero[FILAS][COLUMNAS], int fila, int columna) {
+    if (fila >= 0 && fila < FILAS && columna >= 0 && columna < COLUMNAS) {
+        return tablero[fila][columna];
+    }
+    return ' ';
+}
 

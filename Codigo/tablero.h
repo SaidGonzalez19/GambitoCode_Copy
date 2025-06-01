@@ -10,4 +10,7 @@ typedef struct{
 void inicializar_tablero(char tablero[FILAS][COLUMNAS]);
 void mostrar_tablero(char tablero[FILAS][COLUMNAS]);
 void limpiar_tablero(char tablero[FILAS][COLUMNAS]);
+void colocar_pieza(char tablero[FILAS][COLUMNAS], int fila, int columna, char pieza);
+char obtener_pieza(char tablero[FILAS][COLUMNAS], int fila, int columna);
+
 #endif 
