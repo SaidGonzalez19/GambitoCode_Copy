@@ -7,5 +7,7 @@ typedef struct{
     int turno;
     int estado;
 }EstadoJuego;
-
+void inicializar_tablero(char tablero[FILAS][COLUMNAS]);
+void mostrar_tablero(char tablero[FILAS][COLUMNAS]);
+void limpiar_tablero(char tablero[FILAS][COLUMNAS]);
 #endif 
